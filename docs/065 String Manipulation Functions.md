@@ -54,3 +54,24 @@ n.isalnum()
 s = 'itversity&inc'
 s.isalnum()
 ```
+
+### Exercise on String Manipulation
+* Define a variable company_name, 'Analytiqs, Inc'
+* Find the index of , from the string
+* Check if comma exists
+* Convert company_name to lower case
+* Validate company_name for alphabets, ',' and ' '.
+
+```python
+company_name = 'Analytiqs, Inc'
+
+company_name.find(',')
+
+company_name.count(',')
+company_name.count(',') > 0
+
+company_name.lower()
+
+company_name.replace(',', '').replace(' ', '')
+company_name.replace(',', '').replace(' ', '').isalpha()
+```
