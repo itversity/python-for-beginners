@@ -19,3 +19,27 @@ elif int(n) % 2 == 0:
 else:
     print(f'{n} is odd integer')
 ```
+
+* Ternary Operator or single like if else
+
+```
+n = 10
+True if n % 2 == 0 else False
+```
+
+* Exercise - Conditionals
+Accept an integer value using input and assign to variable by name year. If year is negative or 0 print "Entered year {year} is invalid", if year is positive apply below logic to determine leap year. If it is leap year print "Entered year {year} is leap year", if not print "Entered year {year} is not leap year".
+
+Leap Year Formulla: 
+To be a leap year, the year number must be divisible by four – except for end-of-century years, which must be divisible by 400. This means that the year 2000 was a leap year, although 1900 was not. 2024, 2028, 2032 and 2036 are all leap years.
+
+```python
+year = int(input('Enter year to check if it is leap year: '))
+
+if year <= 0:
+    print(f'Entered year {year} is invalid')
+elif year % 4 != 0 or (year % 100 == 0 and year % 400 != 0):
+    print(f'Entered year {year} is not leap year')
+else:
+    print(f'Entered year {year} is leap year')
+```

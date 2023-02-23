@@ -1,5 +1,5 @@
-```
-# sales_revenue.py
+```python
+# sales.py
 import sys
 
 def validate_commission_pct(commission_pct):
