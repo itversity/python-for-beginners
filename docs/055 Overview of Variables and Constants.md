@@ -4,7 +4,7 @@
 * Type Hints
 * Best Practices to define variables
 
-```
+```python
 print('Hello World')
 
 10 + 20
