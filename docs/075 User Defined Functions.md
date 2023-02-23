@@ -1,3 +1,4 @@
+* Syntax for defining functions
 * Overview of scoping using indentation
 * Sum of integers from 1 to n
 
