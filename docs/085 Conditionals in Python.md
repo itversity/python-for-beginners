@@ -7,7 +7,7 @@ if n.isdigit():
 else:
     print(f'{n} is of type {type(n)}')
 ```
-* Develop logic to checks whether an integer is even or odd.
+* Develop logic to check whether an integer is even or odd.
 ```python
 n = 11 --Test with negative number or 0
 
@@ -29,7 +29,7 @@ elif list(reversed(s)) != list(s):
 else:
     print(f'{s} is a palindrome')
 ```
-* Ternary Operator or single like if else
+* Ternary Operator or single line if else
 
 ```python
 n = 10
