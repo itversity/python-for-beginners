@@ -11,7 +11,7 @@ def is_fibonacci(n: int) -> bool:
         fib_base2 += fib_base1
         fib_base1 = fib 
 
-    return fib == n 
+    return fib == n
 
 for i in range(1, 11):
     print(f'{i} is Fibonacci: {is_fibonacci(i)})') 
@@ -50,7 +50,7 @@ for i in range(1, 101):
     if is_prime(i):
         print(i, end=' ')
 ```
-* Print multiplication table for given n up to 10
+* Print multiplication table for given n up to 10.
 ```python
 def mul_table(n, t=10):
     for i in range(1, n + 1):

@@ -34,3 +34,57 @@ l[-3:] # Last 3 elements
 l.pop(1) # Removes 2nd element
 l.remove(1) # Removes first occurrence of 1
 ```
+
+* Exercise 1: Return list of Fibonacci numbers up to the positive integer entered. Use below code to check if the given number is a fibonacci number.
+```python
+def is_fibonacci(n: int) -> bool:
+    if n < 0:
+        raise ValueError 
+    fib_base1 = 0
+    fib_base2 = 1
+    fib = fib_base1
+    while fib < n:
+        fib = fib_base2
+        fib_base2 += fib_base1
+        fib_base1 = fib 
+    return fib == n
+```
+
+* Exercise 2: Return list of Prime numbers up to the positive integer entered. Use below code to check if the given number is a prime number.
+```python
+import math
+
+def is_prime(n: int) -> bool:
+    if (n != 2 and n % 2 == 0) or n in (0, 1):
+        return False
+    if n == 3 or n == 2:
+        return True
+    for i in range(3, math.ceil(math.sqrt(n)) + 1, 2):
+        if n % i == 0:
+            return False
+    return True
+```
+
+* Solution for Exercise 1
+```python
+def get_fibs(n=10):
+    fibs = []
+    for i in range(1, n + 1):
+        if is_fibonacci(i):
+            fibs.append(i)
+    return fibs
+
+get_fibs(100)
+```
+
+* Solution for Exercise 2:
+```python
+def get_primes(n=20):
+    primes = []
+    for i in range(1, n + 1):
+        if is_prime(i):
+            primes.append(i)
+    return primes
+
+get_primes(100)
+```
