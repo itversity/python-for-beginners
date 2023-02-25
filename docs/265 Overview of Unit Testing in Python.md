@@ -1,6 +1,6 @@
 * Sample test cases
 
-```
+```python
 import unittest
 from unittest import TestCase
 from sales import Sale
@@ -42,7 +42,7 @@ if _name_ == '_main_':
 
 * Using `setUp` and `tearDown`
 
-```
+```python
 import unittest
 from unittest import TestCase
 from sales import Sale
@@ -56,6 +56,7 @@ class SaleTestCase(TestCase):
         ]
         return super().setUp()
     
+
     def test_get_commission_amount(self):
         sale1 = self.sales[0]
         sale2 = self.sales[1]
@@ -71,6 +72,7 @@ class SaleTestCase(TestCase):
         with self.assertRaises(ValueError):
             sale3.get_commission_amount()
             
+
     def test_get_sale_amount(self):
         sale1 = self.sales[0]
         sale2 = self.sales[1]
@@ -89,13 +91,14 @@ class SaleTestCase(TestCase):
     def tearDown(self) -> None:
         return super().tearDown()    
 
+
 if _name_ == '_main_':
     unittest.main()
 ```
 
 * Using `setUpClass`
 
-```
+```python
 import unittest
 from unittest import TestCase
 from sales import Sale
@@ -109,14 +112,7 @@ class SaleTestCase(TestCase):
             Sale(3, 1, 1500, -1)
         ]
     
-    # def setUp(self) -> None:
-    #     self.sales =[
-    #         Sale(1, 1, 1500, 15),
-    #         Sale(2, 1, 1500, None),
-    #         Sale(3, 1, 1500, -1)
-    #     ]
-    #     return super().setUp()
-    
+
     def test_get_commission_amount(self):
         sale1 = self.sales[0]
         sale2 = self.sales[1]
@@ -132,6 +128,7 @@ class SaleTestCase(TestCase):
         with self.assertRaises(ValueError):
             sale3.get_commission_amount()
             
+
     def test_get_sale_amount(self):
         sale1 = self.sales[0]
         sale2 = self.sales[1]
@@ -147,8 +144,6 @@ class SaleTestCase(TestCase):
         with self.assertRaises(ValueError):
             sale3.get_sale_revenue()
     
-    # def tearDown(self) -> None:
-    #     return super().tearDown()    
 
 if _name_ == '_main_':
     unittest.main()

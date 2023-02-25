@@ -1,4 +1,4 @@
-```
+```python
 # sales.py
 
 class Sale:
