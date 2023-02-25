@@ -84,6 +84,7 @@ True if n % 2 == 0 else False
   * If score > 50 and score <= 80, "just passed"
   * Otherwise "passed with distinction"
 * Exercise 3 - Leap Year
+
 Accept an integer value using input and assign to variable by name year. If year is negative or 0 print "Entered year {year} is invalid", if year is positive apply below logic to determine leap year. If it is leap year print "Entered year {year} is leap year", if not print "Entered year {year} is not leap year".
 
 Leap Year Formulla: 
