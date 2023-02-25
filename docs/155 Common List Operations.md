@@ -38,8 +38,8 @@ l.remove(1) # Removes first occurrence of 1
 * Exercise 1: Return list of Fibonacci numbers up to the positive integer entered. Use below code to check if the given number is a fibonacci number.
 ```python
 def is_fibonacci(n: int) -> bool:
-    if n < 0:
-        raise ValueError 
+    if n < 0 or type(n) != int:
+        raise ValueError('Invalid Number')
     fib_base1 = 0
     fib_base2 = 1
     fib = fib_base1
@@ -55,6 +55,8 @@ def is_fibonacci(n: int) -> bool:
 import math
 
 def is_prime(n: int) -> bool:
+    if n < 0 or type(n) != int:
+        raise ValueError('Invalid Number')
     if (n != 2 and n % 2 == 0) or n in (0, 1):
         return False
     if n == 3 or n == 2:

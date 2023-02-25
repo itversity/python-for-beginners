@@ -2,14 +2,14 @@
 ```python
 def is_fibonacci(n: int) -> bool:
     if n < 0 or type(n) != int:
-        raise ValueError 
-    fib_base1 = 0
-    fib_base2 = 1
-    fib = fib_base1
+        raise ValueError('Invalid Number') 
+    fib1 = 0
+    fib2 = 1
+    fib = fib1
     while fib < n:
-        fib = fib_base2
-        fib_base2 += fib_base1
-        fib_base1 = fib 
+        fib = fib2
+        fib2 += fib1
+        fib1 = fib 
 
     return fib == n
 
@@ -32,7 +32,7 @@ import math
 
 def is_prime(n: int) -> bool:
     if n < 0 or type(n) != int:
-        raise ValueError 
+        raise ValueError('Invalid Number') 
 
     if (n != 2 and n % 2 == 0) or n in (0, 1):
         return False
@@ -60,7 +60,7 @@ for i in range(1, 101):
 ```python
 def mul_table(n, t=10):
     if n < 0 or type(n) != int:
-        raise ValueError 
+        raise ValueError('Invalid Number') 
     for i in range(1, t + 1):
         print(f'{n} * {i} = {n * i}')
 
