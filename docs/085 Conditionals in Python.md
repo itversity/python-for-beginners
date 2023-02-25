@@ -84,6 +84,7 @@ True if n % 2 == 0 else False
   * If score > 50 and score <= 80, "just passed"
   * Otherwise "passed with distinction"
 * Exercise 3 - Leap Year
+
 Accept an integer value using input and assign to variable by name year. If year is negative or 0 print "Entered year {year} is invalid", if year is positive apply below logic to determine leap year. If it is leap year print "Entered year {year} is leap year", if not print "Entered year {year} is not leap year".
 
 Leap Year Formulla: 
@@ -93,7 +94,7 @@ To be a leap year, the year number must be divisible by four – except for end-
 ```python
 n = 11 # Test with negative integer or 0
 
-if type(n) == int and (n % 2 == 0 or n % 3 == 0):
+if (type(n) == int and n > 0) and (n % 2 == 0 or n % 3 == 0):
     print(f'{n} is positive integer and is divisible by 2 or 3')
 else:
     print(f'{n} is not a valid number')
