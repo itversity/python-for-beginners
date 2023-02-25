@@ -53,9 +53,8 @@ for i in range(1, 101):
 * Print multiplication table for given n up to 10.
 ```python
 def mul_table(n, t=10):
-    for i in range(1, n + 1):
-        for j in range(1, t + 1):
-            print(f'{i} * {j} = {i * j}')
+    for i in range(1, t + 1):
+        print(f'{n} * {i} = {n * i}')
 
 mul_table(5)
 ```
