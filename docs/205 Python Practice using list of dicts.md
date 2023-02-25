@@ -28,31 +28,14 @@ print(sale_rep_ids)
 ```
 * Develop a function to get list of sale transactions where transaction amount is less than 500. Each element should be of type dict.
 ```python
-low_revenue_sales = [] # Initializing empty list
-for sale in sales:
-    if sale['sale_amount'] < 500:
-        low_revenue_sales.append(sale)
+def get_low_revenue_sales(sales):
+    low_revenue_sales = [] # Initializing empty list
+    for sale in sales:
+        if sale['sale_amount'] < 500:
+            low_revenue_sales.append(sale)
+    return low_revenue_sales
 
-print(low_revenue_sales)
+get_low_revenue_sales(sales)
 ```
-* Exercise: Develop a function to get list of transactions with invalid commission percentage (negative or None). Each element should be of type dict.
-* Exercise: Develop a function to get list of transactions with commission amounts. Commission amount is equal to `("sale amount" * "commission %") / 100`. Each element should be of type dict. Each tuple in the list should contain 5 elements. The list should not contain transactions with invalid commission % (negative or none). The last element in each of the dict should be named as `commission_amount`.
-* Solution for Exercise 1
-```python
-invalid_sales = [] # Initializing empty list
-for sale in sales:
-    if sale['commission_pct'] == None or sale['commission_pct'] < 0:
-        invalid_sales.append(sale)
-
-print(invalid_sales)
-```
-* Solution for Exercise 2
-```python
-sales_with_commission = [] # Initializing empty list
-for sale in sales:
-    if sale['commission_pct'] != None and sale['commission_pct'] >= 0:
-        sale['commission_amount'] = (sale['sale_amount'] * sale['commission_pct']) / 100
-        sales_with_commission.append(sale)
-
-print(sales_with_commission)
-```
+* Exercise 1: Develop a function to get list of transactions with invalid commission percentage (negative or None). Each element should be of type dict.
+* Exercise 2: Develop a function to get list of transactions with commission amounts. Commission amount is equal to `("sale amount" * "commission %") / 100`. Each element should be of type dict. Each tuple in the list should contain 5 elements. The list should not contain transactions with invalid commission % (negative or none). The last element in each of the dict should be named as `commission_amount`.
