@@ -32,7 +32,7 @@ class Sale:
         return f'{_class.name_}<{self.sale_id}>'
 ```
 
-```
+```python
 # app.py
 from sales import Sale
 
