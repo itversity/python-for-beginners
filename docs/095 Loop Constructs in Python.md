@@ -20,7 +20,6 @@ for i in l:
         print(i)
 ```
 * Get sum of integers from a list of elements
-* Print all the integers from a list of elements
 ```python
 l = [1000, 15.25, 'Hello', 225, None, 275]
 total = 0
