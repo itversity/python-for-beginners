@@ -1,7 +1,7 @@
 * Develop a function to check if the number belongs to Fibonacci series or not.
 ```python
 def is_fibonacci(n: int) -> bool:
-    if n < 0:
+    if n < 0 or type(n) != int:
         raise ValueError 
     fib_base1 = 0
     fib_base2 = 1
@@ -13,7 +13,10 @@ def is_fibonacci(n: int) -> bool:
 
     return fib == n
 
+is_fibonacci(-10)
+
 for i in range(1, 11):
+    print(i)
     print(f'{i} is Fibonacci: {is_fibonacci(i)})') 
 ```
 * Print Fibonacci series up to n
@@ -28,6 +31,9 @@ for i in range(1, 11):
 import math
 
 def is_prime(n: int) -> bool:
+    if n < 0 or type(n) != int:
+        raise ValueError 
+
     if (n != 2 and n % 2 == 0) or n in (0, 1):
         return False
     
@@ -53,6 +59,8 @@ for i in range(1, 101):
 * Print multiplication table for given n up to 10.
 ```python
 def mul_table(n, t=10):
+    if n < 0 or type(n) != int:
+        raise ValueError 
     for i in range(1, t + 1):
         print(f'{n} * {i} = {n * i}')
 
