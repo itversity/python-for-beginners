@@ -94,7 +94,7 @@ To be a leap year, the year number must be divisible by four – except for end-
 ```python
 n = 11 # Test with negative integer or 0
 
-if type(n) == int and (n % 2 == 0 or n % 3 == 0):
+if (type(n) == int and n > 0) and (n % 2 == 0 or n % 3 == 0):
     print(f'{n} is positive integer and is divisible by 2 or 3')
 else:
     print(f'{n} is not a valid number')
