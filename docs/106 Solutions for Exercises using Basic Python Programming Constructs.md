@@ -1,4 +1,5 @@
-* Develop a function to check if the number belongs to Fibonacci series or not.
+* Develop a function to check if the positive integer belongs to Fibonacci series or not.
+  * Raise `ValueError` exception with message "Invalid Value" if the argument passed is not valid positive integer.
 ```python
 def is_fibonacci(n: int) -> bool:
     if n < 0 or type(n) != int:
@@ -25,8 +26,8 @@ for i in range(1, 11):
     if is_fibonacci(i):
         print(i, end=' ')
 ```
-* Check if given number n is prime or not
-
+* Develop a function to check if given positive integer n is prime or not
+  * Raise `ValueError` exception with message "Invalid Value" if the argument passed is not valid positive integer.
 ```python
 import math
 
@@ -50,13 +51,13 @@ print(is_prime(7))
 print(is_prime(9))
 ```
 * Print Prime Numbers up to n
-
 ```python
 for i in range(1, 101):
     if is_prime(i):
         print(i, end=' ')
 ```
-* Print multiplication table for given n up to 10.
+* Develop a function to print multiplication table for given positive integer n from 1 up to 10.
+  * Raise `ValueError` exception with message "Invalid Value" if the argument passed is not valid positive integer.
 ```python
 def mul_table(n, t=10):
     if n < 0 or type(n) != int:

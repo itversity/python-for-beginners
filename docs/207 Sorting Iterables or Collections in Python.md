@@ -59,38 +59,3 @@ students = [
     {'student_id': 5, 'scores': [92, 94, 91]}
 ]
 ```
-* Solution for Exercise 1
-```python
-student = students[0]
-student['scores']
-sum(student['scores'])
-student['total_score'] = sum(student['scores'])
-
-sorted(students, key=lambda student: sum(student['scores']))
-from pprint import pprint
-pprint(sorted(students, key=lambda student: sum(student['scores'])))
-
-pprint(sorted(students, key=lambda student: sum(student['scores']), reverse=True))
-```
-* Solution for Exercise 2
-```python
-student = students[0]
-student['scores']
-sum(student['scores'])
-student['total_score'] = sum(student['scores'])
-from pprint import pprint
-pprint(student)
-
-students_with_total = []
-for student in students:
-    student['total_score'] = sum(student['scores'])
-    students_with_total.append(student)
-
-pprint(students_with_total)
-
-sorted(students_with_total, key=lambda student: student['total_score'])
-pprint(sorted(students_with_total, key=lambda student: student['total_score']))
-
-pprint(sorted(students_with_total, key=lambda student: student['total_score'], reverse=True))
-```
-

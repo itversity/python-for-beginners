@@ -43,3 +43,15 @@ my_sum([(1000, 15), (1200, 20), (1000, 12)], lambda i: ((i[0] * i[1]) / 100))
 ```
 * Advantages of lambda functions
 * Usage of lambda functions
+* Example of `filter` function
+```python
+l = [1, 2, 4, 3, 1]
+filter(lambda i: i % 2 == 0, l)
+list(filter(lambda i: i % 2 == 0, l))
+```
+* Example of `map` function
+```python
+l = [1, 2, 4, 3, 1]
+map(lambda i: i ** 2, l)
+list(map(lambda i: i ** 2, l))
+```
