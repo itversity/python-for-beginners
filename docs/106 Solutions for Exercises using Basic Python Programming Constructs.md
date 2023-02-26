@@ -20,7 +20,7 @@ for i in range(1, 11):
     print(i)
     print(f'{i} is Fibonacci: {is_fibonacci(i)})') 
 ```
-* Print Fibonacci series up to n
+* Print Fibonacci numbers between 1 to n
 ```python
 for i in range(1, 11):
     if is_fibonacci(i):
