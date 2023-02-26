@@ -1,6 +1,34 @@
+* Defining a class in Python
 ```python
 # sales.py
+class Sale:
+    sale_id: int
+    sale_rep_id: int
+    sale_amount: float
+    commission_pct: int
 
+sale = Sale()
+print(sale)
+```
+* Overriding default constructor
+```python
+# sales.py
+class Sale:
+    sale_id: int
+    sale_rep_id: int
+    sale_amount: float
+    commission_pct: int
+
+    def __init__(self):
+        print('Inside Constructor')
+
+
+sale = Sale()
+print(sale)
+```
+* Define custom constructor
+```python
+# sales.py
 class Sale:
     sale_id: int
     sale_rep_id: int
@@ -8,7 +36,49 @@ class Sale:
     commission_pct: int
 
 
-    def _init_(self, sale_id, sale_rep_id, sale_amount, commission_pct):
+    def __init__(self, sale_id, sale_rep_id, sale_amount, commission_pct):
+        self.sale_id = sale_id
+        self.sale_rep_id = sale_rep_id
+        self.sale_amount = sale_amount
+        self.commission_pct = commission_pct
+
+
+sale = Sale(1, 1, 1500.00, 15)
+print(sale)
+print(sale.sale_id)
+```
+* Overriding str and repr methods
+```python
+# sales.py
+class Sale:
+    sale_id: int
+    sale_rep_id: int
+    sale_amount: float
+    commission_pct: int
+
+    def __init__(self, sale_id, sale_rep_id, sale_amount, commission_pct):
+        self.sale_id = sale_id
+        self.sale_rep_id = sale_rep_id
+        self.sale_amount = sale_amount
+        self.commission_pct = commission_pct
+
+    def __repr__(self):
+        return f'{__class__.__name__}<{self.sale_id}>'
+    
+    def __str__(self):
+        return sale.sale_id
+```
+* Adding additional methods
+```python
+# sales.py
+class Sale:
+    sale_id: int
+    sale_rep_id: int
+    sale_amount: float
+    commission_pct: int
+
+
+    def __init__(self, sale_id, sale_rep_id, sale_amount, commission_pct):
         self.sale_id = sale_id
         self.sale_rep_id = sale_rep_id
         self.sale_amount = sale_amount
@@ -28,10 +98,10 @@ class Sale:
             return self.sale_amount
         return self.sale_amount - self.get_commission_amount()
 
-    def _repr_(self):
-        return f'{_class.name_}<{self.sale_id}>'
+    def __repr__(self):
+        return f'{__class__.__name__}<{self.sale_id}>'
 ```
-
+* Using Sale from other program
 ```python
 # app.py
 from sales import Sale

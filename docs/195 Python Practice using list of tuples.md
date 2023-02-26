@@ -33,7 +33,6 @@ def get_low_revenue_sales(sales):
     for sale in sales:
         if sale[2] < 500:
             low_revenue_sales.append(sale)
-
     return low_revenue_sales
 
 get_low_revenue_sales(sales)

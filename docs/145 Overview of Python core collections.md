@@ -1,6 +1,6 @@
 * list
 ```python
-# Group of elementsß
+# Group of elements
 # Mutable
 # Allows Duplicates
 # Maintains the order
@@ -30,7 +30,7 @@ s = {1, 6, -1, 2, 1, 3}
 # Immutable
 # Unique Keys (no duplicates)
 
-e = {'eid': 1, 'fname': 'Durga', 'lname': 'Gadiraju'}
+user = {'id': 1, 'fname': 'Durga', 'lname': 'Gadiraju'}
 ```
 * Iterable or Seq
 * Exercise 1: Create a list with these elements - **1, 4, 2, 3, 1, 3**. Each element in the list should be of type integer. The list should contain 6 elements.
