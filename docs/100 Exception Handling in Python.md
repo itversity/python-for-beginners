@@ -1,3 +1,4 @@
+* Overview of Exceptions or Run Time Errors
 * Pre-defined Exceptions
   * `ValueError`
   * `TypeError`
