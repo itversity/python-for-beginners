@@ -38,9 +38,6 @@ def is_prime(n: int) -> bool:
     if (n != 2 and n % 2 == 0) or n in (0, 1):
         return False
     
-    if n == 3 or n == 2:
-        return True
-    
     for i in range(3, math.ceil(math.sqrt(n)) + 1, 2):
         if n % i == 0:
             return False
