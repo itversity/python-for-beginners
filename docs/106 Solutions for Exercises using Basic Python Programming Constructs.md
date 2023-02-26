@@ -20,7 +20,7 @@ for i in range(1, 11):
     print(i)
     print(f'{i} is Fibonacci: {is_fibonacci(i)})') 
 ```
-* Print Fibonacci series up to n
+* Print Fibonacci numbers between 1 to n
 ```python
 for i in range(1, 11):
     if is_fibonacci(i):
@@ -37,9 +37,6 @@ def is_prime(n: int) -> bool:
 
     if (n != 2 and n % 2 == 0) or n in (0, 1):
         return False
-    
-    if n == 3 or n == 2:
-        return True
     
     for i in range(3, math.ceil(math.sqrt(n)) + 1, 2):
         if n % i == 0:

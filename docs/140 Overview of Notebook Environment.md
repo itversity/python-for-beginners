@@ -1,4 +1,4 @@
-* Overview of Notebook Environment
+* Getting Started with Notebook Environment
 * Notebook Environment for learners
 * Differences between IDE and Notebook Environment
 * Notebooks for coding

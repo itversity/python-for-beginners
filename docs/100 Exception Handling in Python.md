@@ -1,3 +1,4 @@
+* Overview of Exceptions or Run Time Errors
 * Pre-defined Exceptions
   * `ValueError`
   * `TypeError`
@@ -84,6 +85,15 @@ print(f'Sum of integers up to {n} is {sum_n(n)}')
 ```python
 class InvalidNumberError(Exception):
     pass
+
+def sum_n(n):
+    if type(n) != int or n <= 0:
+        raise InvalidNumberError('Invalid Error')
+    res = (n * (n + 1)) / 2
+    return res
+
+sum_n(10)
+sum_n(-10)
 
 def sum_n(n):
     try:
