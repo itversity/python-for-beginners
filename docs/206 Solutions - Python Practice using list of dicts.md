@@ -1,5 +1,5 @@
 * Exercise 1: Develop a function to get list of transactions with invalid commission percentage (negative or None). Each element should be of type dict.
-* Exercise 2: Develop a function to get list of transactions with commission amounts. Commission amount is equal to `("sale amount" * "commission %") / 100`. Each element should be of type dict. Each tuple in the list should contain 5 elements. The list should not contain transactions with invalid commission % (negative or none). The last element in each of the dict should be named as `commission_amount`.
+* Exercise 2: Develop a function to get list of transactions with commission amounts. Commission amount is equal to `("sale amount" * "commission %") / 100`. Each element should be of type dict. Each dict in the list should contain 5 elements. The list should not contain transactions with invalid commission % (negative or none). The last element in each of the dict should be named as `commission_amount`.
 ```python
 sales = [
     {'sale_id': 1, 'sale_rep_id': 101, 'sale_amount': 500.00, 'commission_pct': 5},
