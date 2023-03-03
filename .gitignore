@@ -1,2 +1,5 @@
 *.py
 docs/data
+__pycache__
+*.mp4
+*.mp3
