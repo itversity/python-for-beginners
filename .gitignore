@@ -3,3 +3,5 @@ docs/data
 __pycache__
 *.mp4
 *.mp3
+.sfdx
+logs
