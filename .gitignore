@@ -5,3 +5,9 @@ __pycache__
 *.mp3
 .sfdx
 logs
+.DS_Store
+pb-venv/
+quotes.json
+quotes
+quotes_scraper
+tutorial
